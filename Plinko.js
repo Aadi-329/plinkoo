@@ -2,16 +2,16 @@ class plinko{
 
 
 constructor(x,y){
-this.plinko=Bodies.circle(x,y,5,{isStatic:true})
+this.plinko=Bodies.circle(x,y,10,{isStatic:true})
 World.add(world,this.plinko)
 
 }
 
 display(){
 var pos=this.plinko.position;
-ellipseMode(CENTER)
-fill("red");
-circle(pos.x,pos.y,10)
+ellipseMode(RADIUS)
+fill("white");
+ellipse(pos.x,pos.y,10,10)
 
 
 }
