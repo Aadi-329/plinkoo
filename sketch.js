@@ -54,7 +54,6 @@ function setup() {
 
 
 
-	console.log(plinkoo);
 	Engine.run(engine);
   
 }
@@ -62,12 +61,11 @@ function setup() {
 
 function draw() {
 	background(rgb(0,0,0))
-console.log(particles)
   rectMode(CENTER);
-  if (frameCount%60===0) {
+  if (frameCount%40===0) {
 		
 	
-	particles.push(new particle(random(width/2-5,width/2-5),10))
+	particles.push(new particle(random(width/2-10,width/2+10),10))
 		}
 
   ground.display();
